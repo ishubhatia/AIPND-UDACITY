@@ -1,0 +1,70 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                  table_001.jpg  label:                      table
+ 2 key:              Dalmatian_067.jpg  label:                  dalmatian
+ 3 key:                  Horse_001.jpg  label:                      horse
+ 4 key:              Dalmatian_068.jpg  label:                  dalmatian
+
+     MATCH:
+
+             Dalmatian_067.jpg: 
+Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog
+
+             Dalmatian_068.jpg: 
+Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog
+
+ NOT A MATCH:
+
+                 table_001.jpg: 
+Real:                      table   Classifier:                           desk
+
+                 Horse_001.jpg: 
+Real:                      horse   Classifier:                         sorrel
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+             Dalmatian_067.jpg: 
+Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Dalmatian_068.jpg: 
+Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                 table_001.jpg: 
+Real:                      table   Classifier:                           desk  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                 Horse_001.jpg: 
+Real:                      horse   Classifier:                         sorrel  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+Results for architecture: vgg
+-------------------------------
+Number of Images: 4
+Number of Dog Images: 2
+Number of "Not-a" Dog Image: 2
+pct_correct_dogs: 100.0
+pct_correct_breed: 100.0
+pct_correct_notdogs: 100.0
+pct_match: 50.0
+
+** Total Elapsed Runtime: 0:0:3
